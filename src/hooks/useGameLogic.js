@@ -1,7 +1,7 @@
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export const useGameLogic = (cardValues) => {
-    const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [score, setScore] = useState(0);
   const [moves, setMoves] = useState(0);
@@ -36,9 +36,7 @@ export const useGameLogic = (cardValues) => {
 
   }
 
-  useEffect(() => {
-    intializeGame();
-  }, []);
+  
 
   const handleCardClick = (card) => {
 

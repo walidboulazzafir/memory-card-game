@@ -11,9 +11,6 @@ const cardValues =[
 function App() {
 
   const { cards, score, moves, isGameWon, handleCardClick, intializeGame } = useGameLogic(cardValues);
-
-  
-
   return (
     <div className="app">
      <GameHeader score={score} moves={moves} onReset={intializeGame} />
