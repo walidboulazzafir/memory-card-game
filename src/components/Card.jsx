@@ -1,9 +1,6 @@
 import React from 'react'
 import { FaQuestionCircle } from "react-icons/fa";
-
-
-
-
+//card component
 function Card({ card, onclick }) {
   return (
     <div className={`card ${card.isFlipped ? 'flipped' : ''} ${card.isMatched ? 'matched' : ''}`} onClick={()=> onclick(card)}>
